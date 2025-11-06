@@ -1,53 +1,162 @@
-# Next.js & HeroUI Template
+# Bluetrack Frontend - UMG
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css)
+![HeroUI](https://img.shields.io/badge/HeroUI-Components-purple)
+![pnpm](https://img.shields.io/badge/pnpm-Package%20Manager-F69220?logo=pnpm)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+Frontend de Bluetrack, desarrollado con Next.js, TypeScript y HeroUI.  
+Interfaz moderna y responsiva para la gestión de inventarios y distribución de agua.
 
-## Technologies Used
+---
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Project Status
 
-## How to Use
+Bluetrack Frontend se encuentra en **versión estable inicial**.  
+Colaboradores deben crear ramas separadas para nuevas funcionalidades y enviar pull requests para revisión antes de mergear a `main`.  
+¡Happy coding! 🚀
 
-### Use the template with create-next-app
+---
 
-To create a new project based on this template using `create-next-app`, run the following command:
+## Requirements
 
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
+Antes de levantar el proyecto asegúrate de tener instalados:
 
-### Install dependencies
+- **Node.js 18+** (recomendado: 20 LTS)
+- **pnpm** (gestor de paquetes)
+- **Git**
+- Opcional: editor como **VS Code** para desarrollo
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+### Instalar pnpm
 
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+Si no tienes pnpm instalado:
 
 ```bash
-public-hoist-pattern[]=*@heroui/*
+npm install -g pnpm
 ```
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+---
+
+## Installation
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/<tu-usuario>/bluetrack-frontend-umg.git
+```
+
+2. Navegar al directorio del proyecto:
+
+```bash
+cd bluetrack-frontend-umg
+```
+
+3. Instalar dependencias:
+
+```bash
+pnpm install
+```
+
+---
+
+## Configuration
+
+4. Dentro de root `./`, crear el archivo `.env.local` para configurar las variables de entorno:
+
+```bash
+cp .env.example .env.local
+```
+
+**Guiarse del archivo `env.example`**
+
+### Variables de entorno requeridas:
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+# Agregar otras variables según sea necesario
+```
+
+---
+
+## Usage
+
+### Development
+
+Para correr el proyecto en modo desarrollo:
+
+```bash
+pnpm dev
+```
+
+El proyecto estará disponible en [http://localhost:3000](http://localhost:3000)
+
+### Build
+
+Para crear una versión de producción:
+
+```bash
+pnpm build
+```
+
+### Production
+
+Para correr la versión de producción:
+
+```bash
+pnpm start
+```
+
+### Linting
+
+Para verificar el código:
+
+```bash
+pnpm lint
+```
+
+---
+
+## Tech Stack
+
+- **[Next.js](https://nextjs.org/)** - Framework de React para producción
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipado estático para JavaScript
+- **[HeroUI](https://www.heroui.com/)** - Biblioteca de componentes UI
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework de CSS utility-first
+- **[pnpm](https://pnpm.io/)** - Gestor de paquetes rápido y eficiente
+
+---
+
+
+
+## Contributing
+
+1. Crear una nueva rama desde `main`:
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
+
+2. Hacer commits descriptivos:
+   ```bash
+   git commit -m "feat: agregar nueva funcionalidad"
+   ```
+
+3. Push a tu rama:
+   ```bash
+   git push origin feature/nueva-funcionalidad
+   ```
+
+4. Crear un Pull Request para revisión
+
+---
 
 ## License
 
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+Este proyecto es parte de un proyecto académico de la Universidad Mariano Gálvez.
+
+---
+
+## Contact
+
+Para dudas o sugerencias, contactar al equipo de desarrollo.
