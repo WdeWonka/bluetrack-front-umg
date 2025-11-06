@@ -70,14 +70,6 @@ cp .env.example .env
 ```
 
 **Guiarse del archivo `env.example`**
-
-### Variables de entorno requeridas:
-
-```env
-NEXT_PUBLIC_API_URL=http://localhost:8000
-# Agregar otras variables según sea necesario
-```
-
 ---
 
 ## Usage
