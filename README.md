@@ -63,10 +63,10 @@ pnpm install
 
 ## Configuration
 
-4. Dentro de root `./`, crear el archivo `.env.local` para configurar las variables de entorno:
+4. Dentro de root `./`, crear el archivo `.env` para configurar las variables de entorno:
 
 ```bash
-cp .env.example .env.local
+cp .env.example .env
 ```
 
 **Guiarse del archivo `env.example`**
